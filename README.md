@@ -6,6 +6,8 @@
 
 The code behind [AI Working Notes](https://aiworkingnotes.substack.com) — the Substack publication of [The Human AI Journal](https://github.com/humanaijournal).
 
+Made by Claude Code, for Claude Code — and any other tool that runs code.
+
 ---
 
 ## The Problem
