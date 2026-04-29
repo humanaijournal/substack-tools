@@ -10,7 +10,7 @@ The code behind [AI Working Notes](https://aiworkingnotes.substack.com) — the 
 
 ## The Problem
 
-If you write on Substack and want to publish without going through their website, you're stuck. Substack doesn't offer an **API** (a standard way for outside software to talk to a website — like the ones that let WordPress publish from a phone app or Mailchimp sync subscribers). For publishing to Substack, nothing like that exists.
+If you write on Substack and want to publish without going through their website, you're stuck. Substack doesn't offer an **API** (a standard way for outside software to talk to a website — like the one that lets WordPress publish from a phone app).
 
 The community has built workarounds. Two of them together cover most of what a writer needs:
 
@@ -26,7 +26,7 @@ The catch: they live in completely different technical worlds. Using both means 
 A single set of tools in one language. Both jobs, one login.
 
 - **A notes publisher.** Write a short note in plain text. Run one command. The note appears on Substack with all formatting intact — bold, italic, links, bullet lists, link preview cards. Indistinguishable from one typed directly on Substack.
-- **A posts publisher.** Same idea, for full newsletter issues. Same login, same workflow.
+- **A posts publisher.** Same idea, for full newsletter issues.
 - **A one-time login.** Sign into Substack once. The session stays valid for months — even with two-factor authentication enabled.
 
 When it ships, publishing a note will look something like this:
@@ -52,7 +52,7 @@ Follow the build at [AI Working Notes](https://aiworkingnotes.substack.com).
 
 Substack doesn't officially support outside publishing. The community has reverse-engineered how its web editor talks to its servers, and these tools use the same conversation.
 
-This works reliably today. It could break if Substack changes their internals. If it does, expect a fix here within a few days.
+This works reliably today. It could break if Substack changes its internals. If it does, expect a fix here within a few days.
 
 Use this on your own publications. Don't use it to spam or scrape other people's content.
 
