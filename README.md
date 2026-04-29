@@ -17,13 +17,13 @@ The developer community has built workarounds. Two of them together cover most o
 - [`python-substack`](https://github.com/ma2za/python-substack), written in **Python** (popular for automation and data work) — handles full newsletter issues beautifully.
 - [`substack-api`](https://github.com/jakub-k-slys/substack-api), written in **TypeScript** (popular for building web apps) — handles short notes beautifully.
 
-The catch: they live in completely different technical worlds. Using both means maintaining two programming environments on your computer for one website. Two installations, two languages, two sets of documentation. Friction nobody needs.
+The catch: they live in completely different technical worlds — one is in Python, the other in TypeScript. Using both means maintaining two programming environments on your computer just to publish to one website. Two installations, two languages, two sets of documentation. An unnecessary headache.
 
 ---
 
 ## The Solution
 
-A single set of tools in one language. Both jobs, one login.
+A single set of tools, written in one language, that handles both full newsletter issues and short notes (with all their formatting) — all from one shared login.
 
 - **A notes publisher.** Write a short note in plain text. Run one command. The note appears on Substack with all formatting intact — bold, italic, links, bullet lists, link preview cards. Indistinguishable from one typed directly on Substack.
 - **A posts publisher.** Same idea, for full newsletter issues.
@@ -42,7 +42,7 @@ Run that from anywhere code runs — your **terminal** (the place on your comput
 
 ## Status
 
-**Building in public. Nothing is shipped yet.** This README is the starting point. Everything else is on its way.
+**Built in public** — every step of the development is shared as it happens, not after it's done. **Nothing is shipped yet.** This README is the starting point. Everything else is on its way.
 
 Follow the build at [AI Working Notes](https://aiworkingnotes.substack.com).
 
@@ -50,11 +50,11 @@ Follow the build at [AI Working Notes](https://aiworkingnotes.substack.com).
 
 ## How This Works (And Why It Could Break)
 
-Substack doesn't officially support outside publishing. The community has reverse-engineered how its web editor talks to its servers, and these tools use the same conversation.
+Substack doesn't officially support outside publishing. The developer community has reverse-engineered how its web editor talks to its servers, and these tools use the same conversation.
 
-This works reliably today. It could break if Substack changes how things work on their end. If it does, expect a fix here within a few days.
+This works reliably today. It could break if Substack changes how things work on their end. If that happens, we'll try to push a fix within a few days. But use this at your own risk — we take no responsibility if anything goes wrong.
 
-Use this on your own publications. Don't use it to spam others or to automatically pull content from theirs.
+Use it on your own publications, and use it responsibly.
 
 ---
 
@@ -65,8 +65,6 @@ This exists because three other people did the hard work first:
 - **[`python-substack`](https://github.com/ma2za/python-substack)** by [@ma2za](https://github.com/ma2za) — the Python library this project uses for full newsletter posts. Without it, half of what's here wouldn't exist.
 - **[`substack-api` (TypeScript)](https://github.com/jakub-k-slys/substack-api)** by [@jakub-k-slys](https://github.com/jakub-k-slys) — figured out exactly how Substack notes are structured behind the scenes. The notes side here is built on that work.
 - **["No Official API? No Problem!"](https://iam.slys.dev/p/no-official-api-no-problem-how-i)** — the original writeup that explains how Substack's hidden interface works.
-
-If anything here eventually makes its way back into `python-substack`, that's the goal.
 
 ---
 
